@@ -10,7 +10,13 @@ jobs:
     steps:
      - run: echo "hello world"
      - run: mkdir deep
-     - run: ls -l 
+     - run: |
+         ls
+         cat /etc/passwd
+         df
+         ls -lart > file.txt
+         cat file.txt
+         
     
     
   
