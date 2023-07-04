@@ -1,1 +1,16 @@
+name: github cheakout
 
+on: [push]
+
+jobs:
+  github_checkout:
+    name: github checkout runner on linux
+    runs-on: ubuntu-latest
+    
+    steps:
+      - run: echo "this is Github CheckOut"
+      - name: Checkout
+        uses: actions/checkout@v3.5.3
+      - run: echo "this is ${{ github.repository }}"
+      
+  
