@@ -8,15 +8,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "hello world this is running a ${{ runner.os }} server in GitHub"
-      
-  
----
-
-name: Build on Windows
-on: push
-jobs:
-  build:
-    runs-on: windows-latest
-    steps:
-      - run: choco install gh
-      - run: gh version
