@@ -1,1 +1,16 @@
+name: simple shell commands
 
+on: [push]
+
+jobs:
+  this_is_job1:
+    name: this is shell commands
+    runs-on: ubuntu-latest
+    
+    steps:
+     - run: echo "hello world"
+     - run: mkdir deep
+     - run: ls -l 
+    
+    
+  
