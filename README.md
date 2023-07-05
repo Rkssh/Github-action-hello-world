@@ -1,2 +1,2 @@
 # Github-action-hello-world
-This repo is for Github Action
+This repo is for Github Action.
